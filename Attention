@@ -1,0 +1,28 @@
+# Environment Info
+Python 3.9
+numpy==1.22.4         # from conda-forge
+pandas==1.5.3         # from conda-forge
+brukeropusreader==1.3.4
+
+Ensure that all OPUS files in the folder use the same spectral resolution.
+# 此项目在批量转换一个文件夹里的opus文件时，要求其光谱分辨率应该保持一致！
+
+Before running the script, make sure to:
+# 运行文件前，要注意
+
+# 1. Modify the following paths
+# 1、修改输入与输出文件地址
+
+# 2. Confirm the spectral types to extract:
+#       fields_to_extract = ("AB", "ScSm")
+#       # "AB" = absorbance; "ScSm" = single-channel raw spectra
+#       # For reflectance or transmittance spectra, change to ("RT") or ("TR")  etc.
+# 2、确认是否用于提取吸光度以及原始光谱  
+# 例如，fields_to_extract=("AB", "ScSm")，中的AB是吸光度，若是反射率光谱（RT）或透射率光谱（TR）应注意改变
+
+# 3、在批量转换文件之前，应该先使用OPUS软件将一个opus文件转换为dpt格式，并放入dpt_template_file 中，确保dpt名称与
+# dpt_template_file = r"D:\Experiment data\实验数据\OPUS_DPT_数据转化\dpt_template\template.dpt"名称相同
+# 3. Before batch conversion, manually convert one OPUS file to `.dpt` format
+#    using the OPUS software, and save it as the template file:
+#       dpt_template_file = r"D:\Experiment data\实验数据\OPUS_DPT_数据转化\dpt_template\template.dpt"
+#    The file name must be `template.dpt` to be recognized correctly.

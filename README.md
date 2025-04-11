@@ -3,9 +3,9 @@ This Python project provides a batch data conversion tool for Bruker OPUS files,
 
 It extracts raw spectral data (such as absorbance, single-channel signals) and exports them into structured `.xlsx` files with multiple sheets.
 
-The tool was primarily developed for use in Room 202, Agricultural Sensing Department, Suyuan Building.
+The tool was primarily developed for use in Room 202, Agricultural Sensing Department, Suyuan Building, with major contributions by Ke Wang.
 
-Special thanks to Changbo and Lianglin, whose priceless insights emerged during a legendary dinner of "酸萝卜鱼"(pickled radish fish).
+Special thanks to Changbo Song and Lianglin Hao, whose priceless insights emerged during a legendary dinner of "酸萝卜鱼"(pickled radish fish).
 
 ## Script Descriptions
 
